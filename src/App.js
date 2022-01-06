@@ -21,6 +21,7 @@ import Faq from './Pages/Home/FAQ/Faq';
 import AddReview from './Pages/Dashboard/AddReview';
 import AddFaq from './Pages/Dashboard/AddFaq';
 import AllLoans from './Pages/Dashboard/AllLoans';
+import PaymentWrapper from './Pages/Dashboard/PaymentWrapper';
 
 function App() {
   return (
@@ -100,10 +101,10 @@ function App() {
               }
             />
             <Route
-              path="/dashboard/makePayment"
+              path="/dashboard/paymentWrapper"
               element={
                 <PrivateRouter>
-                  <MakePayment></MakePayment>
+                  <PaymentWrapper></PaymentWrapper>
                 </PrivateRouter>
 
 

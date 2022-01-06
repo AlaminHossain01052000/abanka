@@ -125,6 +125,6 @@ const useFirebasee = () => {
             setLoading(false);
         });
     }, [auth])
-    return { user, error, googleSignIn, logOut, admin, registerNewUser, loginUser }
+    return { user, error, googleSignIn, logOut, admin, registerNewUser, loginUser, loading }
 }
 export default useFirebasee;

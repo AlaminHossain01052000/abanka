@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
 const EasyApply = () => {
     const [ourPolicies, setOurPolicies] = useState([]);
     const [applicant, setApplicant] = useState({});
     const { user } = useAuth();
+    const navigate = useNavigate();
     useEffect(() => {
         fetch("http://localhost:5000/ourPolicies")
             .then(res => res.json())
@@ -31,7 +33,13 @@ const EasyApply = () => {
             },
             body: JSON.stringify(applicant)
         })
-            .then()
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    alert("Application Sent Successfully");
+                    navigate("/home");
+                }
+            })
     }
 
     return (
@@ -77,6 +85,10 @@ const EasyApply = () => {
                     <input className="form-control mb-3" required type="text" name="monthlyIncome" onChange={handleOnChange} />
                 </div>
                 <div>
+                    <label htmlFor="amountOfLoan">Loan Amount You Want</label>
+                    <input className="form-control mb-3" required type="text" name="amountOfLoan" onChange={handleOnChange} />
+                </div>
+                <div>
                     <label htmlFor="describe">Why do you need this loan</label>
                     <textarea className="form-control mb-3" type="text" name="describe" rows={3} cols={3} onChange={handleOnChange} required />
                 </div>
@@ -97,8 +109,8 @@ const EasyApply = () => {
 
 
                 </div>
-                <div>
-                    <input className="form-control mb-3" required type="submit" value="submit" />
+                <div className='display-middle-container'>
+                    <input className="form-control mb-3 btn btn-info w-25" required type="submit" value="submit" />
                 </div>
             </form>
         </div>

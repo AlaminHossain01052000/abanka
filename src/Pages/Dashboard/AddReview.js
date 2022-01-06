@@ -30,13 +30,13 @@ const AddReview = () => {
     }
 
     return (
-        <div>
-            <input type="text" disabled value={user.displayName} />
-            <input type="text" disabled value={user.email} />
-            <input type="number" placeholder='rating' name="rating" onChange={handleOnChange} />
-            <textarea row={5} col={5} placeholder='description' name="description" onChange={handleOnChange}>
+        <div className='mx-auto w-50 mt-5'>
+            <input className="form-control mb-3" type="text" disabled value={user.displayName} />
+            <input className="form-control mb-3" type="text" disabled value={user.email} />
+            <input className="form-control mb-3" type="number" placeholder='rating' name="rating" onChange={handleOnChange} />
+            <textarea className="form-control mb-3" row={5} col={5} placeholder='description' name="description" onChange={handleOnChange}>
             </textarea>
-            <input type="submit" onClick={handleReviewAdding} />
+            <input className="form-control mb-3 btn btn-success" type="submit" onClick={handleReviewAdding} value="Add Review" />
         </div>
     );
 };

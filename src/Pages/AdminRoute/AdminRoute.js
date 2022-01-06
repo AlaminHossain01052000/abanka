@@ -5,11 +5,18 @@ import useAuth from '../hooks/useAuth';
 
 const AdminRoute = ({ children, ...rest }) => {
 
-    const { user, admin } = useAuth();
+    const { admin, loading } = useAuth();
 
-    console.log(admin);
+
 
     const location = useLocation();
+    if (loading) {
+        return <div className='display-middle-container'>
+            <div class="spinner-border text-primary mt-5" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    }
     if (admin) {
         return children;
     }

@@ -3,8 +3,16 @@ import { Navigate, useLocation } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
 const PrivateRouter = ({ children, ...rest }) => {
-    const { user } = useAuth();
+    const { user, loading } = useAuth();
     const location = useLocation();
+    if (loading) {
+        return <div className='display-middle-container'>
+            <div class="spinner-border text-primary mt-5" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+    }
     if (user.email) {
         return children;
     }
