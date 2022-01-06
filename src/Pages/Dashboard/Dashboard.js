@@ -46,7 +46,6 @@ const Dashboard = () => {
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav>
                                 <Link className="dashboard-nav-link" to="/dashboard">Dashboard</Link >
-                                <Link className="dashboard-nav-link" to="/dashboard">Dashboard</Link >
                                 <Link className="dashboard-nav-link" to="/dashboard/myLoans">My Loans</Link >
                                 <Link className="dashboard-nav-link" to="/dashboard/makePayment">Make Payment</Link >
                                 <Link className="dashboard-nav-link" to="/dashboard/addReview">Add a Review</Link>
