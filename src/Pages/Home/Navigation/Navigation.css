@@ -1,0 +1,27 @@
+/* .menu-link{
+    color: white;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    
+} */
+.navbar-light .navbar-brand {
+    color: white;
+    font-size: 25px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #5f27cd;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+    color: black;
+}
+.nav-link {
+  color: white;
+  font-weight: 600;
+  font-family: 'Mukta', sans-serif;
+}

@@ -1,0 +1,23 @@
+.choose-us-image{
+    width:250px;
+    height:260px;
+    padding: 20px;
+    border:1px solid #0abde3;
+    margin-right: 10px;
+}
+.choose-us-card{
+    border:1px solid #0abde3;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.icon-container{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border:1px solid #0abde3;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0abde3 ;
+    color:white;
+}

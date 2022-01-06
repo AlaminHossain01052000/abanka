@@ -1,0 +1,14 @@
+.contact-us ul{
+    list-style: none;
+}
+.contact-us li{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+
+}
+.contact-us{
+    margin-top: 100px;
+    background-color: #0abde3;
+    padding: 100px 0;
+    color:white;
+}

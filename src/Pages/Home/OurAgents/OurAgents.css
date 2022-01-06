@@ -1,0 +1,35 @@
+.info-holder-circle{
+    position: relative;
+}
+.image-holder-circle{
+    position:absolute;
+    right:14%;
+    top:-25%;
+}
+.info-cicle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color:#0abde3;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.image-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: -10%;
+    right: -42%;
+    border:10px solid #0abde3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* background-color: blue;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; */
+}
