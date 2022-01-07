@@ -110,7 +110,7 @@ const EasyApply = () => {
 
                 </div>
                 <div className='display-middle-container'>
-                    <input className="form-control mb-3 btn btn-info w-25" required type="submit" value="submit" />
+                    <input className="form-control mb-3 btn btn-info w-lg-25 w-md-25" required type="submit" value="submit" />
                 </div>
             </form>
         </div>
