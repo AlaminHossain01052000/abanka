@@ -10,12 +10,12 @@ const ChooseUs = () => {
                     <h1 className='text-center my-5 font-spline'>Reason to choose us</h1>
                     <h4 className='font-roboto'>Abanka is a reknowned organization for giving loan in the lowest interest.Rules and Regulations and Process are much more easier than any other organizations. We have a special system for giving loan in 72 hours</h4>
                 </div>
-                <section className="d-flex justify-content-between">
+                <section className="d-lg-flex justify-content-between">
                     <div className='my-5'>
                         <img src={ChooseUsImage} className='choose-us-image' alt="" />
                     </div>
                     <Row className="my-5">
-                        <Col lg={6}>
+                        <Col lg={6} md={12} sm={12} xs={12}>
                             <Card style={{ width: '18rem' }} className="choose-us-card">
                                 <div className="mx-auto mt-3 icon-container">
                                     <i className="fas fa-check"></i>
@@ -30,7 +30,7 @@ const ChooseUs = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={6} md={12} sm={12} xs={12}>
                             <Card style={{ width: '18rem' }} className="choose-us-card">
                                 <div className='mx-auto mt-3 icon-container'>
                                     <i class="far fa-clock"></i>
@@ -45,7 +45,7 @@ const ChooseUs = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={6} md={12} sm={12} xs={12}>
                             <Card style={{ width: '18rem' }} className="choose-us-card">
                                 <div className='mx-auto mt-3 icon-container'>
                                     <i class="fas fa-user plus"></i>
@@ -60,7 +60,7 @@ const ChooseUs = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col lg={6}>
+                        <Col lg={6} md={12} sm={12} xs={12}>
                             <Card style={{ width: '18rem' }} className="choose-us-card">
                                 <div className='mx-auto mt-3 icon-container'>
                                     <i class="fas fa-lock"></i>

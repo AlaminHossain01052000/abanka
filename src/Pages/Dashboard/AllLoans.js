@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import './AllLoans.css';
 const AllLoans = () => {
     const [applies, setapplies] = useState([]);
     useEffect(() => {
@@ -17,14 +17,32 @@ const AllLoans = () => {
         }).then()
     }
     return (
-        <div>
-            {
-                applies.map(apply => <ul>
-                    <li>{apply.name}</li>
-                    <li>{apply.status}</li>
-                    <button onClick={() => changeLoanStatus(apply._id)}>Approve</button>
-                </ul>)
-            }
+        <div id="all-loans">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Applicant Name</th>
+                        <th>Applicant Email</th>
+                        <th>Application Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        applies.map(apply => <tr>
+                            <td>{apply.name}</td>
+                            <td>{apply?.email}</td>
+                            <td>{apply.status}</td>
+                            <td>
+                                <button onClick={() => changeLoanStatus(apply._id)} className='btn btn-warning'>Approve</button>
+                            </td>
+
+                        </tr>)
+                    }
+                </tbody>
+
+            </table>
         </div>
     );
 };

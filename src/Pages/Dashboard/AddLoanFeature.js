@@ -17,9 +17,9 @@ const AddLoanFeature = () => {
         })
     }
     return (
-        <div>
-            <input type="text" onBlur={handleOnBlur} />
-            <input type="submit" value="Add A Feature" onClick={handleOnClick} />
+        <div className='ms-5 mt-5'>
+            <input className="form-control w-50" type="text" onBlur={handleOnBlur} placeholder='ex.home loan' />
+            <input className="btn btn-info mt-3" type="submit" value="Add A Feature" onClick={handleOnClick} />
         </div>
     );
 };

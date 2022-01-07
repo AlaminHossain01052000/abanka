@@ -1,0 +1,30 @@
+#all-loans{
+    width:50%;
+    margin: 50px auto;
+   
+    
+}
+#all-loans td{
+    border: 2px solid red;
+    background-color: #00d2d3;
+    color: white;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    padding: 10px 15px;
+}
+#all-loans th{
+    border: 2px solid wheat;
+    text-align: center;
+    background-color: #222f3e;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 15px;
+}
+@media only screen and (max-width:550px) {
+    #all-loans{
+        width:90%;
+        margin: 50px 5px;
+        overflow-x: auto;
+    }
+}

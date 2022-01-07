@@ -19,12 +19,12 @@ const Dashboard = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
-                            <Link className="dashboard-nav-link" to="/dashboard">Dashboard</Link >
+                            <Link className="dashboard-nav-link" to="/home">Home</Link >
                             <Link className="dashboard-nav-link" to="/dashboard/makeAdmin">Make Admin</Link >
                             <Link className="dashboard-nav-link" to="/dashboard/allLoans">All Loans</Link >
                             <Link className="dashboard-nav-link" to="/dashboard/addLoanFeature">Add a loan feature</Link >
                             <Link className="dashboard-nav-link" to="/dashboard/faq">Add a FAQ</Link >
-                            <Link className="dashboard-nav-link" to="/dashboard/logout">Logout</Link >
+
 
 
 

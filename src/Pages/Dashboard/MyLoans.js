@@ -12,12 +12,32 @@ const MyLoans = () => {
     console.log(applies);
     return (
         <div>
-            {
-                applies.map(apply => <ul>
-                    <li>{apply.name}</li>
-                    <li>{apply.status}</li>
-                </ul>)
-            }
+
+            <div id="all-loans">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Email Address</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            applies.map(apply => <tr>
+                                <td>{apply.email}</td>
+                                <td>{apply?.amountOfLoan}</td>
+                                <td>{apply.status}</td>
+
+
+                            </tr>)
+                        }
+                    </tbody>
+
+                </table>
+            </div>
         </div>
     );
 };

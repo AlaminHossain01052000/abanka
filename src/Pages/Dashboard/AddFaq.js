@@ -22,10 +22,10 @@ const AddFaq = () => {
             .then()
     }
     return (
-        <div>
-            <input type="text" name="question" onChange={handleOnChange} />
-            <input type="text" name="answer" onChange={handleOnChange} />
-            <input type="submit" value="submit" onClick={handleFaqPost} />
+        <div className='ms-5 mt-5'>
+            <input className="form-control w-50" type="text" name="question" onChange={handleOnChange} placeholder='Question' />
+            <input className="form-control w-50 my-5" type="text" name="answer" onChange={handleOnChange} placeholder='Answer' />
+            <input className="btn btn-info" type="submit" value="submit" onClick={handleFaqPost} />
         </div>
     );
 };
