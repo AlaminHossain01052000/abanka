@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     }
     const setAdminRole = e => {
         e.preventDefault();
-        fetch("http://localhost:5000/users/admin", {
+        fetch("https://abanka-server.vercel.app/users/admin", {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

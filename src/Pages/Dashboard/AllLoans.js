@@ -3,12 +3,12 @@ import './AllLoans.css';
 const AllLoans = () => {
     const [applies, setapplies] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/applicant")
+        fetch("https://abanka-server.vercel.app/applicant")
             .then(res => res.json())
             .then(data => setapplies(data))
     }, [applies])
     const changeLoanStatus = (id) => {
-        fetch(`http://localhost:5000/applicant/${id}`, {
+        fetch(`https://abanka-server.vercel.app/applicant/${id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

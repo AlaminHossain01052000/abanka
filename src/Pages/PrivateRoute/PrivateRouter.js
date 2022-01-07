@@ -7,8 +7,8 @@ const PrivateRouter = ({ children, ...rest }) => {
     const location = useLocation();
     if (loading) {
         return <div className='display-middle-container'>
-            <div class="spinner-border text-primary mt-5" role="status">
-                <span class="sr-only">Loading...</span>
+            <div className="spinner-border text-primary mt-5" role="status">
+                <span className="sr-only">Loading...</span>
             </div>
         </div>
 

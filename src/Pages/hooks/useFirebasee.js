@@ -19,7 +19,7 @@ const useFirebasee = () => {
 
 
                 setUser(newUser);
-                fetch("http://localhost:5000/users", {
+                fetch("https://abanka-server.vercel.app/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -51,7 +51,7 @@ const useFirebasee = () => {
                     // An error occurred At the time of setting user displayName
 
                 });
-                fetch("http://localhost:5000/users", {
+                fetch("https://abanka-server.vercel.app/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -102,7 +102,7 @@ const useFirebasee = () => {
     }
     useEffect(() => {
 
-        fetch(`http://localhost:5000/users/admin?email=${user.email}`)
+        fetch(`https://abanka-server.vercel.app/users/admin?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
                 setAdmin(data.admin)

@@ -13,7 +13,7 @@ const PaymentWrapper = () => {
     const [selected, setSelected] = useState([]);
     const [payment, setMyPayment] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/applicant/${user.email}`)
+        fetch(`https://abanka-server.vercel.app/applicant/${user.email}`)
             .then(res => res.json())
             .then(data => setSelected(data))
     }, [user])

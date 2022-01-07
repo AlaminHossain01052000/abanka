@@ -11,7 +11,7 @@ const AddFaq = () => {
         setFaq(newFaq);
     }
     const handleFaqPost = e => {
-        fetch("http://localhost:5000/faq", {
+        fetch("https://abanka-server.vercel.app/faq", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

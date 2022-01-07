@@ -33,7 +33,7 @@ const ChooseUs = () => {
                         <Col lg={6} md={12} sm={12} xs={12}>
                             <Card style={{ width: '18rem' }} className="choose-us-card">
                                 <div className='mx-auto mt-3 icon-container'>
-                                    <i class="far fa-clock"></i>
+                                    <i className="far fa-clock"></i>
                                 </div>
 
                                 <Card.Body>
@@ -48,7 +48,7 @@ const ChooseUs = () => {
                         <Col lg={6} md={12} sm={12} xs={12}>
                             <Card style={{ width: '18rem' }} className="choose-us-card">
                                 <div className='mx-auto mt-3 icon-container'>
-                                    <i class="fas fa-user plus"></i>
+                                    <i className="fas fa-user plus"></i>
                                 </div>
 
                                 <Card.Body>
@@ -63,7 +63,7 @@ const ChooseUs = () => {
                         <Col lg={6} md={12} sm={12} xs={12}>
                             <Card style={{ width: '18rem' }} className="choose-us-card">
                                 <div className='mx-auto mt-3 icon-container'>
-                                    <i class="fas fa-lock"></i>
+                                    <i className="fas fa-lock"></i>
                                 </div>
 
                                 <Card.Body>

@@ -7,7 +7,7 @@ const Faq = () => {
     const [faqs, setFaqs] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/faq")
+        fetch("https://abanka-server.vercel.app/faq")
             .then(res => res.json())
             .then(data => setFaqs(data))
     }, [])
@@ -21,11 +21,11 @@ const Faq = () => {
                     <img src={faqImg} className="w-100 my-3" alt="" />
                     <div className='d-lg-flex d-md-flex justify-content-between'>
                         <div className='d-flex justify-content-center faq-contact-container align-items-center my-3'>
-                            <i class="fas fa-phone me-4"></i>
+                            <i className="fas fa-phone me-4"></i>
                             <p>+880-0181351111</p>
                         </div>
                         <div className='d-flex justify-content-between faq-contact-container align-items-center mb-2'>
-                            <i class="fas fa-envelope me-4"></i>
+                            <i className="fas fa-envelope me-4"></i>
                             <p>abanka290@gmail.com</p>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ const AddReview = () => {
 
         const givenReview = { name, email, ...review };
         console.log(givenReview);
-        fetch("http://localhost:5000/reviews", {
+        fetch("https://abanka-server.vercel.app/reviews", {
             method: "POST",
             headers: {
                 "content-type": "application/json"

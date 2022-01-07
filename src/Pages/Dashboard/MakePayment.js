@@ -35,7 +35,7 @@ const MakePayment = (props) => {
 
             paymentMethod.email = user.email;
             if (paymentMethod) {
-                fetch("http://localhost:5000.com/paid", {
+                fetch("https://abanka-server.vercel.app.com/paid", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -86,7 +86,7 @@ const MakePayment = (props) => {
 
             }
             <Link to="/home">
-                <i title="Home" class="fas fa-arrow-left bg-red fs-5 text-success mb-5"></i>
+                <i title="Home" className="fas fa-arrow-left bg-red fs-5 text-success mb-5"></i>
 
             </Link>
         </div >

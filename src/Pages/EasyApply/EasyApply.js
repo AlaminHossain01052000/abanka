@@ -8,7 +8,7 @@ const EasyApply = () => {
     const { user } = useAuth();
     const navigate = useNavigate();
     useEffect(() => {
-        fetch("http://localhost:5000/ourPolicies")
+        fetch("https://abanka-server.vercel.app/ourPolicies")
             .then(res => res.json())
             .then(data => setOurPolicies(data))
     }, [])
@@ -24,7 +24,7 @@ const EasyApply = () => {
         console.log(applicant);
         applicant.status = "pending";
         applicant.email = `${user.email}`;
-        fetch("http://localhost:5000/applicant", {
+        fetch("https://abanka-server.vercel.app/applicant", {
             method: "POST",
 
             headers: {
@@ -96,7 +96,7 @@ const EasyApply = () => {
 
 
 
-                    <select class="form-select mb-3" aria-label="Default select example" name="ourPolicies" onChange={handleOnChange}>
+                    <select className="form-select mb-3" aria-label="Default select example" name="ourPolicies" onChange={handleOnChange}>
                         {
                             ourPolicies.map(policy => <option style={{ color: "black" }}>{policy.policyName}</option>)
                         }

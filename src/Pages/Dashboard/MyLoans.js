@@ -5,7 +5,7 @@ const MyLoans = () => {
     const { user } = useAuth();
     const [applies, setApplies] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/applicant/${user.email}`)
+        fetch(`https://abanka-server.vercel.app/applicant/${user.email}`)
             .then(res => res.json())
             .then(data => setApplies(data))
     }, [user.email])

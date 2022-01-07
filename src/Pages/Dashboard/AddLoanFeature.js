@@ -8,7 +8,7 @@ const AddLoanFeature = () => {
         setFeature(feature);
     }
     const handleOnClick = e => {
-        fetch("http://localhost:5000/ourPolicies", {
+        fetch("https://abanka-server.vercel.app/ourPolicies", {
             method: "POST",
             headers: {
                 "content-type": "application/json"
